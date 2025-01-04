@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #d9d9d9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: rgb(51, 54, 87);
+  height: 100px;
+  color: white;
+}
+
+.logo img {
+  display: inline-block;
+  text-align: center;
+  width: 75px;
+  height: 60px;
+  margin-top: -70%;
+  margin-left: -30%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav ul li a:hover {
+  color: #c70000;
+}
+
+.forside {
+  width: 100%;
+  height: 230px;
+  background-image: url(billeder/header-baggrund.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -50px;
+}
+.overlay-text h1 {
+  color: aliceblue;
+  font-family: "Opens sans";
+  font-size: 55px;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.overlay-text p {
+  color: aliceblue;
+  margin-left: 50px;
+  font-family: "Opens sans";
+  margin-top: -40px;
+  font-size: 20px;
+}
+.overlay-text a {
+  color: black;
+  margin-top: 50%;
+  margin-left: 250px;
+  overflow: hidden;
+  text-decoration: none;
+  font-weight: 600;
+}
+.overlay-text a:hover {
+  color: #c70000;
+}
+
+.about-me {
+  margin-top: 20px;
+}
+.about-me img {
+  width: 300px;
+  height: 350px;
+  margin-top: -20px;
+  justify-content: center;
+  padding-left: 68px;
+}
+.about-me h2 {
+  color: rgb(51, 54, 87);
+  padding-left: 30px;
+  margin-bottom: -20px;
+  text-decoration: underline;
+  font-family: "Opens sans";
+  font-weight: bolder;
+  font-size: 30px;
+}
+.about-me p {
+  text-align: center;
+  font-family: "Coming Soon", serif;
+  line-height: 30px;
+  padding: 20px 20px;
+}
+.about-me a {
+  color: #ae0202;
+}
+.projects {
+  text-align: center;
+  padding-top: 50px;
+}
+.projects h2 {
+  color: #2f3244;
+  font-family: "Opens sans";
+  font-weight: lighter;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0; /* Ingen mellemrum mellem bokse */
+  height: 400px;
+}
+.project-item {
+  background-color: rgb(51, 54, 87);
+  color: white;
+  padding-top: 80px;
+  font-size: 25px;
+  font-family: "Coming Soon", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.project-item:hover {
+  color: #c70000;
+}
+.project-item.light:hover {
+  color: #c70000;
+}
+
+.project-item.light {
+  background-color: white;
+  color: #2f3244;
+}
+.help-section {
+  text-align: center;
+  padding: 2em 1em;
+  position: relative;
+}
+.help-section h2 {
+  font-family: "Opens sans";
+  color: #2f3244;
+  font-weight: lighter;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.service img {
+  width: 80px;
+  height: auto;
+  margin-top: 0%;
+  margin-bottom: -20px;
+}
+.services-grid .service p {
+  font-family: "Arial", sans-serif; /* Udskift Arial med din ønskede skrifttype */
+}
+
+footer {
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: url("billeder/footer-baggrund.png") no-repeat center top;
+  background-size: cover;
+}
+.footer-content {
+  z-index: 2;
+  position: relative;
+}
+
+.footerlogo img {
+  padding-left: 120px;
+  display: inline-block;
+  position: absolute;
+  width: 85px;
+  height: 65px;
+  margin-top: -60px;
+}
+
+.text h2 {
+  margin-left: -290px;
+  font-size: 24px;
+  font-family: "Opens sans";
+  margin-top: 95px;
+  font-weight: lighter;
+}
+
+.text p {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+  margin-left: -226px;
+  overflow: hidden;
+  font-family: "Opens sans";
+}
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 2em 5em;
+    height: 100px;
+  }
+
+  header nav ul {
+    gap: 8em;
+    font-size: 24px;
+  }
+
+  header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .logo img {
+    width: 130px;
+    height: 110px;
+    margin-top: 0%;
+  }
+  .forside {
+    width: 1450px;
+    height: 650px;
+    position: relative;
+    margin-top: -137px;
+  }
+  .overlay-text h1 {
+    font-size: 140px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    letter-spacing: 12px;
+    padding-top: 120px;
+  }
+  .overlay-text p {
+    margin-left: 120px;
+    font-family: "Opens sans";
+    margin-top: -110px;
+    font-size: 50px;
+  }
+  .overlay-text a {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: -200px;
+    padding-left: 850px;
+  }
+
+  .ommig-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Afstand mellem kolonner */
+    align-items: center;
+  }
+
+  .ommig-grid h2,
+  .ommig-grid p {
+    grid-column: 1;
+  }
+
+  .ommig-grid img {
+    grid-column: 2;
+    width: 430px;
+    height: 500px;
+  }
+  .about-me h2 {
+    padding-left: 170px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+    font-size: 50px;
+  }
+  .about-me p {
+    font-size: 25px;
+    line-height: 60px;
+    padding: 40px 40px;
+  }
+  .projects h2 {
+    font-size: 48px;
+    margin-top: 80px;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 350px;
+  }
+  .project-item {
+    padding-top: 160px;
+    font-size: 36px;
+  }
+
+  .help-section {
+    text-align: center;
+    padding: 4em 1em;
+    position: relative;
+  }
+  .help-section h2 {
+    font-size: 48px;
+    padding-bottom: 40px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10em;
+    max-width: 1200px;
+  }
+  .service img {
+    width: 120px;
+    height: auto;
+    margin-top: 0%;
+    margin-bottom: -20px;
+  }
+
+  footer {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    overflow: hidden;
+  }
+
+  footer::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: url("billeder/footer-baggrund.png") no-repeat center top;
+    background-size: cover;
+  }
+  .footer-content {
+    z-index: 2;
+    position: relative;
+  }
+
+  .footerlogo img {
+    padding-left: 120px;
+    display: inline-block;
+    position: absolute;
+    width: 85px;
+    height: 65px;
+    margin-top: -60px;
+  }
+}
