@@ -119,7 +119,7 @@ header nav ul li a:hover {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 0; /* Ingen mellemrum mellem bokse */
+  gap: 0;
   height: 400px;
 }
 .project-item {
@@ -130,12 +130,6 @@ header nav ul li a:hover {
   font-family: "Coming Soon", serif;
   font-weight: bold;
   text-decoration: none;
-}
-.project-item:hover {
-  color: #c70000;
-}
-.project-item.light:hover {
-  color: #c70000;
 }
 
 .project-item.light {
@@ -165,8 +159,9 @@ header nav ul li a:hover {
   margin-top: 0%;
   margin-bottom: -20px;
 }
-.services-grid .service p {
-  font-family: "Arial", sans-serif; /* Udskift Arial med din ønskede skrifttype */
+.service p {
+  font-family: "Coming Soon", serif;
+  color: rgb(0, 0, 0);
 }
 
 footer {
@@ -175,18 +170,10 @@ footer {
   text-align: center;
   padding: 50px 20px;
   overflow: hidden;
+  background-color: #2f3244;
+  height: 60px;
 }
 
-footer::before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  left: 0;
-  width: 100%;
-  height: 300px;
-  background: url("billeder/footer-baggrund.png") no-repeat center top;
-  background-size: cover;
-}
 .footer-content {
   z-index: 2;
   position: relative;
@@ -205,7 +192,7 @@ footer::before {
   margin-left: -290px;
   font-size: 24px;
   font-family: "Opens sans";
-  margin-top: 95px;
+  margin-top: 0px;
   font-weight: lighter;
 }
 
@@ -217,6 +204,106 @@ footer::before {
   overflow: hidden;
   font-family: "Opens sans";
 }
+.footer_portfolio p,
+h2 {
+  color: #333;
+}
+
+.header_portfolio {
+  background-color: #d9d9d9;
+}
+.header_portfolio nav ul li a {
+  color: #000000;
+}
+.portfolio h1 {
+  margin-top: 10px;
+  color: #000000;
+  font-family: "Opens sans";
+  text-shadow: none;
+}
+.portfolio .overlay-text p {
+  color: #000000;
+  font-family: "Coming Soon", serif;
+  padding-top: 50px;
+  margin-bottom: -30px;
+}
+.web .overlay-text h1 {
+  color: #2f3244;
+  text-shadow: none;
+  margin-top: -10px;
+  font-size: 30px;
+}
+
+.web .overlay-text p {
+  color: #d30000;
+  text-shadow: none;
+  font-family: "Coming Soon", serif;
+  padding-top: 20px;
+  padding-left: 280px;
+  font-size: 28px;
+}
+.web .projekt_beskrivelse h2 {
+  color: #181010;
+  font-size: 25px;
+  padding-left: 20px;
+  font-family: "Coming Soon", serif;
+}
+.web .projekt_beskrivelse p {
+  color: #181010;
+  font-size: 18px;
+  padding-left: 20px;
+  font-family: "Opens sans";
+}
+.portfolio {
+  background-color: #d9d9d9;
+}
+.projects_portfolio {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.projects_portfolio .project-item {
+  background-color: #181010;
+  color: white;
+  padding-top: 80px;
+  font-size: 25px;
+  font-family: "Coming Soon", serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.project-item:hover {
+  color: #c70000;
+}
+.project-item.light:hover {
+  color: #c70000;
+}
+
+.project-item.light {
+  background-color: white;
+  color: #2f3244;
+}
+.header_portfolio .logo img {
+  width: 105px;
+  height: 110px;
+  margin-top: -40%;
+}
+.footer_portfolio {
+  background-color: #d9d9d9;
+}
+.toggle-button {
+  cursor: pointer;
+
+  margin-bottom: 0;
+}
+
+.toggle-button:hover {
+  text-decoration: underline;
+}
+.mobilvideo {
+  width: 200px;
+  padding-left: 120px;
+}
+
 @media screen and (min-width: 1024px) {
   header {
     padding: 2em 5em;
@@ -317,45 +404,51 @@ footer::before {
   }
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 10em;
+    gap: 4em;
     max-width: 1200px;
   }
   .service img {
-    width: 120px;
+    width: 140px;
     height: auto;
-    margin-top: 0%;
-    margin-bottom: -20px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+  }
+
+  .service p {
+    font-size: 30px;
+    width: 300px;
+  }
+  .service p1 {
+    font-size: 30px;
+    width: 300px;
   }
 
   footer {
-    position: relative;
-    color: white;
-    text-align: center;
+    height: 100px;
     padding: 50px 20px;
     overflow: hidden;
   }
-
-  footer::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background: url("billeder/footer-baggrund.png") no-repeat center top;
-    background-size: cover;
+  .text {
+    margin-left: -850px;
+    font-size: 0px;
   }
+
   .footer-content {
     z-index: 2;
     position: relative;
   }
 
   .footerlogo img {
-    padding-left: 120px;
+    padding-left: 550px;
     display: inline-block;
     position: absolute;
-    width: 85px;
-    height: 65px;
-    margin-top: -60px;
+    width: 125px;
+    height: 105px;
+    margin-top: -80px;
+  }
+  .header_portfolio .logo img {
+    width: 205px;
+    height: 200px;
+    margin-top: 0%;
   }
 }
