@@ -267,11 +267,11 @@ h2 {
 }
 .projects_portfolio {
   text-align: center;
-  padding-top: 50px;
+  margin-top: -110px;
 }
 
 .projects_portfolio .project-item {
-  background-color: #2f3244;
+  background-color: rgb(51, 54, 87);
   color: white;
   padding-top: 80px;
   font-size: 25px;
@@ -301,9 +301,7 @@ h2 {
 .toggle-button {
   cursor: pointer;
   color: #2f3244;
-
   font-family: "Opens sans";
-  padding-left: 30px;
   line-height: 50px;
   margin-top: -10px;
 }
@@ -354,6 +352,73 @@ h2 {
   padding-bottom: 20px;
   line-height: 30px;
 }
+.cv-container {
+  display: flex;
+  height: 100%;
+
+  border: 1px solid #ccc;
+}
+
+.left-column {
+  background-color: #111;
+  color: #fff;
+  width: 35%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.contact,
+.profile,
+.languages {
+  margin-bottom: 20px;
+}
+
+.contact h2,
+.profile h2,
+.languages h2 {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+
+.right-column {
+  width: 65%;
+  padding: 20px;
+}
+
+.right-column h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.education,
+.experience {
+  margin-bottom: 20px;
+}
+
+.education h2,
+.experience h2 {
+  border-bottom: 1px solid #333;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
 
 @media screen and (min-width: 1024px) {
   header {
@@ -377,7 +442,7 @@ h2 {
     margin-top: 0%;
   }
   .forside {
-    width: 1450px;
+    width: 100%;
     height: 650px;
     position: relative;
     margin-top: -137px;
@@ -426,7 +491,7 @@ h2 {
   }
   .about-me p {
     font-size: 25px;
-    line-height: 60px;
+    line-height: 50px;
     padding: 40px 40px;
   }
   .projects h2 {
@@ -442,7 +507,9 @@ h2 {
     padding-top: 140px;
     font-size: 36px;
   }
-
+  .projects_portfolio {
+    margin-top: -80px;
+  }
   .help-section {
     text-align: center;
     padding: 4em 1em;
@@ -531,7 +598,6 @@ h2 {
     font-size: 45px;
     margin-bottom: 0;
     font-family: "Opens sans";
-    padding-left: 70px;
     line-height: 90px;
   }
 
@@ -601,6 +667,11 @@ h2 {
     padding-left: 70px;
     margin-top: -50px;
   }
+  .mobil-website h2 {
+    font-size: 50px;
+    padding-left: 70px;
+    margin-top: 50px;
+  }
   .description-container {
     display: grid;
     grid-template-columns: 1fr 1fr; /* To kolonner med lige meget plads */
@@ -615,4 +686,19 @@ h2 {
     font-family: "Coming Soon", serif;
     line-height: 40px;
   }
+}
+.help-section .service p {
+	min-height: 139px;
+}
+.help-section .service:nth-child(4) p{
+	min-height: 97px;
+}
+.help-section .service:last-child p {
+	min-height: 92px;
+}
+
+@media screen and (max-width: 768px) {
+	.help-section .service p {
+		min-height: unset;
+	}
 }

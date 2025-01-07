@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <title>Web</title>
+    <title>Ux/Ui</title>
     <main>
       <header class="header_portfolio">
         <div class="logo">
@@ -38,33 +38,37 @@
 
       <section class="web">
         <div class="overlay-text">
-          <h1>GRUNDLÆGGENDE WEB</h1>
-          <p>TEMA 2</p>
+          <h1>GRUNDLÆGGENDE UX/UI</h1>
+          <p>TEMA 3</p>
         </div>
-        <section class="projekt_beskrivelse">
+      </section>
+      <section class="projekt_beskrivelse">
+        <p>
+          I tema 3 byggede vi videre på vores forståelse af, hvordan man
+          opbygger og koder hjemmesider, og vi blev introduceret til
+          grundlæggende JavaScript. Dette tema markerede også begyndelsen på en
+          dybere indsigt i betydningen af grundig research. Vi lærte at
+          dokumentere arbejdsprocessen og udviklingen af ideer gennem
+          forskellige værktøjer som prototyper, moodboards og wireframes.
+        </p>
+      </section>
+      <section class="spil-grid">
+        <div class="forklaring">
+          <h2>Projekt - Emnesite</h2>
           <p>
-            Tema 2 fokuserede på de grundlæggende principper og teknologier, der
-            udgør fundamentet for opbygningen af en hjemmeside. I dette tema
-            dykkede jeg ned i en ny digital verden, hvor jeg gennem en række
-            forskellige HTML- og CSS-øvelser gradvist opbyggede en forståelse
-            for både kodning og design.
+            Vores projekt for tema 3 gik ud på at designe og udvikle en
+            responsiv hjemmeside med et valgfrit emne. Projektet bestod af fem
+            faser: research og idéudvikling, digital prototype, kodning af
+            sitet, præsentation og dokumentation. Vi begyndte med en omfattende
+            research, som dannede grundlaget for en prototype, der fungerede som
+            udgangspunkt for udviklingen af mit site.
           </p>
-        </section>
-        <section class="spil-grid">
-          <div class="forklaring">
-            <h2>Projekt - Website</h2>
-            <p>
-              Gennem forståelse af HTML og CSS opbyggede jeg min første
-              responsive hjemmeside, med en grundstruktur, undersider og en
-              navigationsmenu.
-            </p>
-          </div>
-          <div class="video">
-            <video class="macbookvideo" autoplay loop muted>
-              <source src="billeder/mobilsite-macbook.mp4" type="video/mp4" />
-            </video>
-          </div>
-        </section>
+        </div>
+        <div class="video">
+          <video class="macbookvideo" autoplay loop muted>
+            <source src="billeder/emnesite-macbook.mp4" type="video/mp4" />
+          </video>
+        </div>
       </section>
       <section class="mobil-website">
         <h2
@@ -78,32 +82,51 @@
           class="description-container"
           style="display: none"
         >
-		<div class="spil-grid">
-          <div class="description">
-            <p>
-              Jeg arbejdede ud fra mobile-first princippet, hvilket betød, at
-              jeg startede med at kode mobilversionen af sitet. Da det var min
-              første opgave, stødte jeg på nogle udfordringer, og derfor er der
-              også nogle fejl og mangler på siden. Jeg eksperimenterede med
-              forskellige farver og borders for at få prøvet så mange muligheder
-              som muligt og få en bedre forståelse for designprocessen.
-            </p>
-          </div>
-          <div class="video">
-            <video class="mobilvideo" autoplay loop muted>
-              <source src="billeder/mobilsite-iphone.mp4" type="video/mp4" />
-            </video>
-          </div>
-          </div>
+			<div class="spil-grid">
+			  <div class="description">
+				<p>
+				  Jeg arbejdede ud fra mobile-first princippet, hvilket betød, at
+				  jeg startede med at kode mobilversionen af sitet. Da det var min
+				  første opgave, stødte jeg på nogle udfordringer, og derfor er der
+				  også nogle fejl og mangler på siden. Jeg eksperimenterede med
+				  forskellige farver og borders for at få prøvet så mange muligheder
+				  som muligt og få en bedre forståelse for designprocessen.
+				</p>
+			  </div>
+			  <div class="video">
+				<video class="mobilvideo" autoplay loop muted>
+				  <source src="billeder/emnesite-iphone.mp4" type="video/mp4" />
+				</video>
+			  </div>
+			</div>
+        </div>
+
+        <h2 class="toggle-button"
+        onclick="toggleDescription('website-description', this)"
+      </section>
+
+      <section class="researh-grid">
+        <div>
+          <p>Moodboard</p>
+          <img src="billeder/ui1.png" alt="billede1" />
+        </div>
+        <div>
+          <p>Første Prototype</p>
+          <img src="billeder/ui2.png" alt="billede2" />
+        </div>
+        <div>
+          <p>Færdige Prototype</p>
+          <img src="billeder/ui3.png" alt="billede3" />
         </div>
       </section>
+
       <div id="lottiefile">
         <script
           src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
           type="module"
         ></script>
         <a
-          href="https://emmamazanti.dk/mobilsite/index.html"
+          href="https://emmamazanti.dk/emnesite/forside.html"
           style="display: inline-block; text-decoration: none; border: none"
         >
           <dotlottie-player
@@ -128,7 +151,6 @@
         </div>
       </footer>
     </main>
-
     <script>
       function toggleDescription(descriptionId, element) {
         const description = document.getElementById(descriptionId);

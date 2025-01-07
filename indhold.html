@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Emma Mazanti</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Open+Sans:ital,wdth,wght@0,75,300..800;1,75,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <title>Ux/Ui</title>
+    <main>
+      <header class="header_portfolio">
+        <div class="logo">
+          <a href="index.html">
+            <img src="billeder/logo.png" alt="logo" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="#">Om mig</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="web">
+        <div class="overlay-text">
+          <h1>GRUNDLÆGGENDE INDHOLD</h1>
+          <p>TEMA 5</p>
+        </div>
+      </section>
+      <section class="projekt_beskrivelse">
+        <p>
+          I tema 3 byggede vi videre på vores forståelse af, hvordan man
+          opbygger og koder hjemmesider, og vi blev introduceret til
+          grundlæggende JavaScript. Dette tema markerede også begyndelsen på en
+          dybere indsigt i betydningen af grundig research. Vi lærte at
+          dokumentere arbejdsprocessen og udviklingen af ideer gennem
+          forskellige værktøjer som prototyper, moodboards og wireframes.
+        </p>
+      </section>
+      <section class="spil-grid">
+        <div class="forklaring">
+          <h2>Projekt - Passionsite</h2>
+          <p>
+            Vores projekt for tema 3 gik ud på at designe og udvikle en
+            responsiv hjemmeside med et valgfrit emne. Projektet bestod af fem
+            faser: research og idéudvikling, digital prototype, kodning af
+            sitet, præsentation og dokumentation. Vi begyndte med en omfattende
+            research, som dannede grundlaget for en prototype, der fungerede som
+            udgangspunkt for udviklingen af mit site.
+          </p>
+        </div>
+        <div class="video">
+          <video class="macbookvideo" autoplay loop muted>
+            <source src="billeder/passionsite-macbook.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <section class="mobil-website">
+        <h2
+          class="toggle-button"
+          onclick="toggleDescription('mobilsite-description', this)"
+        >
+          Mobilsite +
+        </h2>
+        <div
+          id="mobilsite-description"
+          class="description-container"
+          style="display: none"
+        >
+			<div class="spil-grid">
+			  <div class="description">
+				<p>
+				  Jeg arbejdede ud fra mobile-first princippet, hvilket betød, at
+				  jeg startede med at kode mobilversionen af sitet. Da det var min
+				  første opgave, stødte jeg på nogle udfordringer, og derfor er der
+				  også nogle fejl og mangler på siden. Jeg eksperimenterede med
+				  forskellige farver og borders for at få prøvet så mange muligheder
+				  som muligt og få en bedre forståelse for designprocessen.
+				</p>
+			  </div>
+			  <div class="video">
+				<video class="mobilvideo" autoplay loop muted>
+				  <source src="billeder/passionsite-iphone.mp4" type="video/mp4" />
+				</video>
+			  </div>
+			</div>
+        </div>
+
+        <h2 class="toggle-button"
+        onclick="toggleDescription('website-description', this)"
+      </section>
+
+      <section class="researh-grid">
+        <div>
+          <p>HTML grid</p>
+          <img src="billeder/portfolio1.png" alt="billede1" />
+        </div>
+        <div>
+          <p>CSS grid</p>
+          <img src="billeder/portfolio2.png" alt="billede2" />
+        </div>
+        <div>
+          <p>Færdige Prototype</p>
+          <img src="billeder/portfolio3.png" alt="billede3" />
+        </div>
+      </section>
+
+      <div id="lottiefile">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <a
+          href="https://emmamazanti.dk/passionsite/index.html#videoer"
+          style="display: inline-block; text-decoration: none; border: none"
+        >
+          <dotlottie-player
+            src="https://lottie.host/c4a2138d-8452-4c4c-bb8a-70bf5600022a/x4QE1ZATZB.lottie"
+            background="transparent"
+            speed="1"
+            style
+            loop
+            autoplay
+          ></dotlottie-player>
+        </a>
+      </div>
+
+      <section class="spil-grid">
+        <div class="forklaring">
+          <h2>Projekt - Passionsite</h2>
+          <p>
+            Vores projekt for tema 3 gik ud på at designe og udvikle en
+            responsiv hjemmeside med et valgfrit emne. Projektet bestod af fem
+            faser: research og idéudvikling, digital prototype, kodning af
+            sitet, præsentation og dokumentation. Vi begyndte med en omfattende
+            research, som dannede grundlaget for en prototype, der fungerede som
+            udgangspunkt for udviklingen af mit site.
+          </p>
+        </div>
+        <div class="video">
+          <video class="macbookvideo" autoplay loop muted>
+            <source
+              src="billeder/virksomhedssite-macbook.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+      </section>
+      <section class="mobil-website">
+        <h2
+          class="toggle-button"
+          onclick="toggleDescription('mobilsite-description', this)"
+        >
+          Mobilsite +
+        </h2>
+        <div
+          id="mobilsite-description"
+          class="description-container"
+          style="display: none"
+        >
+			<div class="spil-grid">
+			  <div class="description">
+				<p>
+				  Jeg arbejdede ud fra mobile-first princippet, hvilket betød, at
+				  jeg startede med at kode mobilversionen af sitet. Da det var min
+				  første opgave, stødte jeg på nogle udfordringer, og derfor er der
+				  også nogle fejl og mangler på siden. Jeg eksperimenterede med
+				  forskellige farver og borders for at få prøvet så mange muligheder
+				  som muligt og få en bedre forståelse for designprocessen.
+				</p>
+			  </div>
+			  <div class="video">
+				<video class="mobilvideo" autoplay loop muted>
+				  <source src="billeder/passionsite-iphone.mp4" type="video/mp4" />
+				</video>
+			  </div>
+          </div>
+        </div>
+
+        <h2 class="toggle-button"
+        onclick="toggleDescription('website-description', this)"
+      </section>
+
+      <section class="researh-grid">
+        <div>
+          <p>Prototype</p>
+          <img src="billeder/virksomhedssite1.png" alt="billede1" />
+        </div>
+        <div>
+          <p>Moodboard</p>
+          <img src="billeder/virksomhedssite2.png" alt="billede2" />
+        </div>
+        <div>
+          <p>Lighhouse test</p>
+          <img src="billeder/virksomhedssite3.png" alt="billede3" />
+        </div>
+      </section>
+
+      <div id="lottiefile">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <a
+          href="http://emmamazanti.dk/virksomhedssite/index.html"
+          style="display: inline-block; text-decoration: none; border: none"
+        >
+          <dotlottie-player
+            src="https://lottie.host/c4a2138d-8452-4c4c-bb8a-70bf5600022a/x4QE1ZATZB.lottie"
+            background="transparent"
+            speed="1"
+            style
+            loop
+            autoplay
+          ></dotlottie-player>
+        </a>
+      </div>
+
+      <footer class="footer_portfolio">
+        <div class="footer-content_portfolio">
+          <div class="text">
+            <h2>Kontakt mig</h2>
+            <p>Emma0008@stud.kea.dk</p>
+          </div>
+          <div class="footerlogo">
+            <img src="billeder/logo.png" alt="logo" />
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      function toggleDescription(descriptionId, element) {
+        const description = document.getElementById(descriptionId);
+        if (description.style.display === "none") {
+          description.style.display = "block";
+          element.textContent = element.textContent.replace("+", "-");
+        } else {
+          description.style.display = "none";
+          element.textContent = element.textContent.replace("-", "+");
+        }
+      }
+    </script>
+  </body>
+</html>
