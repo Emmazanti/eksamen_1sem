@@ -2,9 +2,9 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-color: #d9d9d9;
   color: #333;
+  height: 100%;
 }
 
 header {
@@ -26,17 +26,21 @@ header {
   list-style: none;
   display: flex;
   gap: 1.5em;
-  margin-left: 90px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
   margin-top: -50px;
 }
 
 .cv-header nav a {
   color: rgb(51, 54, 87);
   text-decoration: none;
+  font-family: "Opens sans";
+  text-align: center;
   font-weight: bold;
 }
 .cv-header nav ul li a:hover {
-  color: #b70000;
+  color: #f6f6f6;
 }
 
 .logo img {
@@ -63,7 +67,7 @@ header nav a {
   font-weight: bold;
 }
 header nav ul li a:hover {
-  color: #b70000;
+  color: #000000;
 }
 
 .forside {
@@ -95,14 +99,14 @@ header nav ul li a:hover {
 }
 .projekt-knap a {
   color: black;
-  margin-left: 250px;
+  margin-left: 240px;
+
   overflow: hidden;
-  padding-top: -100px;
   text-decoration: none;
   font-weight: 600;
 }
 .projekt-knap a:hover {
-  color: #c70000;
+  color: whitesmoke;
 }
 
 .about-me {
@@ -113,7 +117,7 @@ header nav ul li a:hover {
   height: 350px;
   margin-top: -20px;
   justify-content: center;
-  padding-left: 68px;
+  padding-left: 38px;
 }
 .about-me h2 {
   color: rgb(51, 54, 87);
@@ -206,7 +210,7 @@ footer {
 }
 
 .footerlogo img {
-  padding-left: 110px;
+  padding-left: 60px;
   display: inline-block;
   position: absolute;
   width: 125px;
@@ -215,7 +219,7 @@ footer {
 }
 
 .text h2 {
-  margin-left: -290px;
+  margin-left: -200px;
   font-size: 24px;
   font-family: "Opens sans";
   margin-top: 0px;
@@ -226,13 +230,17 @@ footer {
   margin: 0;
   font-size: 18px;
   color: #fff;
-  margin-left: -226px;
+  margin-left: -120px;
   overflow: hidden;
   font-family: "Opens sans";
 }
 .footer_portfolio p,
 h2 {
-  color: #333;
+  color: #2b2b2b;
+}
+.footer_portfolio p {
+  font-weight: lighter;
+  font-family: "Coming Soon", serif;
 }
 
 .header_portfolio {
@@ -243,19 +251,15 @@ h2 {
 .header_portfolio nav ul li a {
   color: #000000;
 }
+.header_portfolio nav ul li a:hover {
+  color: whitesmoke;
+}
 .portfolio h1 {
-  margin-top: 10px;
   color: #313030;
   font-family: "Opens sans";
   text-shadow: none;
 }
-.portfolio .overlay-text p {
-  color: #000000;
-  font-family: "Coming Soon", serif;
-  padding-top: 50px;
-  font-size: 16px;
-  margin-bottom: -30px;
-}
+
 .web .overlay-text h1 {
   color: #2f3244;
   text-shadow: none;
@@ -268,7 +272,7 @@ h2 {
   text-shadow: none;
   font-family: "Coming Soon", serif;
   padding-top: 20px;
-  padding-left: 280px;
+  padding-left: 200px;
   font-size: 28px;
 }
 .projekt_beskrivelse h2 {
@@ -287,31 +291,20 @@ h2 {
   text-align: center;
   margin-right: 20px;
   line-height: 32px;
-  font-family: "Opens sans";
+  font-family: "Coming Soon", serif;
   margin-top: -20px;
 }
 .portfolio {
-  background-color: #d9d9d9;
-}
-.projects_portfolio {
-  text-align: center;
-  margin-top: -110px;
-}
-
-.projects_portfolio .project-item {
   background-color: rgb(51, 54, 87);
-  color: white;
-  padding-top: 80px;
-  font-size: 25px;
-  font-family: "Coming Soon", serif;
-  font-weight: bold;
-  text-decoration: none;
+}
+.portfolio-page {
+  background-color: rgb(51, 54, 87);
 }
 .project-item:hover {
-  color: #d30000;
+  color: #000000;
 }
 .project-item.light:hover {
-  color: #c70000;
+  color: whitesmoke;
 }
 
 .project-item.light {
@@ -324,14 +317,14 @@ h2 {
   margin-top: -40%;
 }
 .footer_portfolio {
-  background-color: #a2a2a2;
+  background-color: rgb(241, 241, 241);
+  margin-bottom: -20px;
 }
 .toggle-button {
   cursor: pointer;
-  color: #2f3244;
+  color: #000000;
   font-family: "Opens sans";
   line-height: 50px;
-  margin-top: -10px;
 }
 
 .mobilvideo {
@@ -341,6 +334,12 @@ h2 {
 .macbookvideo {
   width: 400px;
   padding-left: 0px;
+  justify-content: center;
+}
+.macbookvideo_virksomhed {
+  width: 400px;
+  padding-left: 0px;
+  justify-content: center;
 }
 #lottiefile {
   padding-left: 20px;
@@ -379,10 +378,15 @@ h2 {
 .spil-grid p {
   font-weight: lighter;
   font-size: 18px;
+  text-align: center;
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 20px;
   line-height: 30px;
+}
+.spil-grid {
+  align-items: center;
+  justify-content: center;
 }
 .spil-grid h2,
 .mobil-website h2.toggle-button:first-child {
@@ -391,33 +395,39 @@ h2 {
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
-  padding-bottom: 20px;
   line-height: 30px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .cv-container {
   display: flex;
-  height: 100%;
+  height: 100vh;
   align-items: flex-start;
 }
 
 .left-column {
   background-color: rgb(51, 54, 87);
-  color: #fff;
+  color: hsl(0, 0%, 100%);
+  height: 1950px;
   width: 35%;
-  padding: 10px 10px 10px;
-  height: 1000px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* .help-section .service p {
-  min-height: unset;
-} */
+.left-column h2 {
+  color: whitesmoke;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.left-column p {
+  font-family: "Open sans";
+  font-size: 14px;
+  padding-left: 10px;
+}
 
 .profile-picture {
   width: 150px;
-  height: 170px;
+  height: 180px;
 }
 
 .contact,
@@ -432,35 +442,61 @@ h2 {
   border-bottom: 1px solid #fff;
   margin-bottom: 10px;
 }
+.left-column p {
+  font-family: "Open sans";
+  line-height: 30px;
+}
+.right-column p {
+  font-family: "Open sans";
+  text-align: center;
+  color: black;
+  line-height: 30px;
+}
+.right-column ul li {
+  line-height: 30px;
+  font-family: "Open sans";
+  font-size: 16px;
+  text-align: center;
+  color: black;
+}
 
 .right-column {
   width: 65%;
   padding: 20px;
+  overflow: hidden;
 }
 
 .right-column h1 {
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
-  color: #000000;
+  color: #2f3244;
   margin-top: -40px;
-}
-.right-column p {
-  color: black;
+  font-family: "Coming Soon", serif;
 }
 
 .education,
 .experience {
   margin-bottom: 20px;
 }
-
+.experience ul li {
+  line-height: 3;
+}
 .education h2,
 .experience h2 {
   border-bottom: 1px solid #333;
   padding-top: 20px;
-  font-size: 20px;
+  font-size: 28px;
   font-family: "Opens sans";
   font-weight: lighter;
   color: rgb(51, 54, 87);
+}
+.footerlogo_cv img {
+  display: inline-block;
+  position: absolute;
+  width: 85px;
+  height: 70px;
+  margin-top: 750px;
+  margin-left: -40px;
 }
 
 ul {
@@ -470,6 +506,57 @@ ul {
 
 ul li {
   margin-bottom: 5px;
+}
+.researh-grid {
+  padding-top: 40px;
+}
+.project-container {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.project-container h1 {
+  font-size: 20px;
+  color: whitesmoke;
+  padding-left: 18px;
+  padding-right: 20px;
+  text-align: center;
+  font-family: "Coming Soon", serif;
+}
+
+.project-grid1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.tema {
+  text-align: center;
+}
+
+.tema h2 {
+  font-size: 28px;
+  color: whitesmoke;
+  margin: 0;
+}
+
+.tema p {
+  color: whitesmoke;
+  font-size: 16px;
+  margin-top: -5px;
+  font-family: "Coming Soon", serif;
+}
+.tema a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.tema a h2:hover {
+  color: #000000;
 }
 
 @media screen and (min-width: 1024px) {
@@ -501,27 +588,24 @@ ul li {
   }
   .overlay-text h1 {
     font-size: 140px;
+    color: whitesmoke;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     letter-spacing: 12px;
     padding-top: 120px;
   }
-  .portfolio .overlay-text p {
-    margin-left: 40px;
-    font-size: 30px;
-    margin-top: -110px;
-  }
+
   .projekt-knap a {
     font-size: 30px;
     text-decoration: none;
     font-weight: 600;
     margin-bottom: -2000px;
-    padding-left: 750px;
+    padding-left: 760px;
   }
 
   .ommig-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Afstand mellem kolonner */
+    gap: 20px;
     align-items: center;
   }
 
@@ -555,13 +639,7 @@ ul li {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 350px;
   }
-  .projects_portfolio .project-item {
-    padding-top: 140px;
-    font-size: 36px;
-  }
-  .projects_portfolio {
-    margin-top: -80px;
-  }
+
   .help-section {
     text-align: center;
     padding: 4em 1em;
@@ -612,7 +690,7 @@ ul li {
     display: inline-block;
     position: absolute;
     width: 225px;
-    height: 205px;
+    height: 215px;
     margin-top: -140px;
   }
   .header_portfolio .logo img {
@@ -622,15 +700,16 @@ ul li {
   }
   .web .overlay-text h1 {
     margin-top: -30px;
-    font-size: 65px;
+    font-size: 50px;
+    letter-spacing: 2px;
   }
 
   .web .overlay-text p {
     text-align: right;
     margin-top: -70px;
-    padding-right: 150px;
-    font-size: 50px;
-    margin-bottom: -20px;
+    margin-right: 350px;
+    font-size: 45px;
+    margin-bottom: 40px;
   }
   .projekt_beskrivelse h2 {
     font-size: 65px;
@@ -639,11 +718,10 @@ ul li {
   }
   .projekt_beskrivelse p {
     font-size: 26px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 110px;
+    margin-right: 110px;
     line-height: 55px;
     color: #343434;
-    padding-top: 10px;
     text-align: center;
   }
   .toggle-button {
@@ -655,7 +733,8 @@ ul li {
 
   .mobilvideo {
     width: 230px;
-    margin-left: 90px;
+    justify-content: center;
+    align-items: center;
   }
   .macbookvideo {
     width: 700px;
@@ -685,10 +764,10 @@ ul li {
     background-color: rgb(51, 54, 87);
   }
   .project-grid .project-item:nth-child(3):hover {
-    color: #c70000;
+    color: black;
   }
   .project-grid .project-item:nth-child(4):hover {
-    color: #c70000;
+    color: whitesmoke;
   }
   .forside .overlay-text p {
     font-size: 50px;
@@ -737,7 +816,7 @@ ul li {
     font-size: 22px;
     padding-left: 150px;
     text-align: center;
-    padding-bottom: 20px;
+
     font-family: "Coming Soon", serif;
     line-height: 40px;
   }
@@ -753,6 +832,153 @@ ul li {
   }
   .help-section .service:last-child p {
     min-height: 143px;
+  }
+  .left-column {
+    height: 1355px;
+    align-items: normal;
+    padding: 50px;
+    width: 35%;
+  }
+
+  .left-column p {
+    font-family: "Open sans";
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 35px;
+  }
+
+  .profile-picture {
+    width: 450px;
+    height: 540px;
+  }
+
+  .contact,
+  .profile,
+  .languages {
+    margin-bottom: 20px;
+  }
+
+  .contact h2,
+  .profile h2,
+  .languages h2 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0px;
+  }
+
+  .right-column p {
+    font-family: "Open sans";
+    line-height: 40px;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .right-column ul li {
+    line-height: 40px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Open sans";
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .right-column {
+    width: 65%;
+    padding: 20px;
+    padding-bottom: 100px;
+    overflow: hidden;
+  }
+
+  .right-column h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #2f3244;
+    margin-top: 20px;
+    font-family: "Coming Soon", serif;
+  }
+  .right-column p {
+    color: black;
+  }
+
+  .education,
+  .experience {
+    margin-bottom: -10px;
+  }
+
+  .education h2,
+  .experience h2 {
+    font-size: 48px;
+  }
+  .footerlogo_cv img {
+    display: inline-block;
+    position: absolute;
+    width: 155px;
+    height: 130px;
+    margin-top: 0px;
+    margin-left: 310px;
+  }
+  cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+  }
+  .cv-header nav ul {
+    gap: 5.5em;
+    margin-top: -50px;
+    margin-left: 470px;
+    margin-right: 30px;
+  }
+  .cv-header nav a {
+    font-size: 30px;
+  }
+  .project-container {
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  .project-container h1 {
+    font-size: 34px;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: -65px;
+    font-family: "Coming Soon", serif;
+  }
+
+  .project-grid1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .tema {
+    text-align: center;
+  }
+
+  .tema h2 {
+    font-size: 52px;
+    color: whitesmoke;
+    margin: 0;
+  }
+
+  .tema p {
+    color: whitesmoke;
+    font-size: 26px;
+    margin-top: -10px;
+    font-family: "Coming Soon", serif;
+  }
+  .tema a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .tema a h2:hover {
+    color: #000000;
   }
 }
 

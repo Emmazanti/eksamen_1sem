@@ -67,7 +67,7 @@
           </p>
         </div>
         <div class="video">
-          <video class="macbookvideo" autoplay loop muted>
+          <video class="macbookvideo" autoplay loop muted playsinline>
             <source src="billeder/passionsite-macbook.mp4" type="video/mp4" />
           </video>
         </div>
@@ -97,7 +97,7 @@
               </p>
             </div>
             <div class="video">
-              <video class="mobilvideo" autoplay loop muted>
+              <video class="mobilvideo" autoplay loop muted playsinline>
                 <source
                   src="billeder/passionsite-iphone.mp4"
                   type="video/mp4"
@@ -187,13 +187,9 @@
           <div class="spil-grid">
             <div class="description">
               <p>
-                Jeg arbejdede ud fra mobile-first princippet, hvilket betød, at
-                jeg startede med at kode mobilversionen af sitet. Da det var min
-                første opgave, stødte jeg på nogle udfordringer, og derfor er
-                der også nogle fejl og mangler på siden. Jeg eksperimenterede
-                med forskellige farver og borders for at få prøvet så mange
-                muligheder som muligt og få en bedre forståelse for
-                designprocessen.
+                Vi arbejdede udfra mobile-first princippet og lavede den
+                derefter responsiv til stor skærm. Jeg stod blandt andet for at
+                lave menuen på vores hjemmeside.
               </p>
             </div>
             <div class="video">
@@ -221,7 +217,7 @@
           <img src="billeder/virksomhedssite2.png" alt="billede2" />
         </div>
         <div>
-          <p>Lighhouse test</p>
+          <p>Lighthouse test</p>
           <img src="billeder/virksomhedssite3.png" alt="billede3" />
         </div>
       </section>
@@ -245,19 +241,19 @@
           ></dotlottie-player>
         </a>
       </div>
-
-      <footer class="footer_portfolio">
-        <div class="footer-content_portfolio">
-          <div class="text">
-            <h2>Kontakt mig</h2>
-            <p>Emma0008@stud.kea.dk</p>
-          </div>
-          <div class="footerlogo">
-            <img src="billeder/logo.png" alt="logo" />
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer class="footer_portfolio">
+      <div class="footer-content_portfolio">
+        <div class="text">
+          <h2>Kontakt mig</h2>
+          <p>Emma0008@stud.kea.dk</p>
+        </div>
+        <div class="footerlogo">
+          <img src="billeder/logo.png" alt="logo" />
+        </div>
+      </div>
+    </footer>
+
     <script>
       function toggleDescription(descriptionId, element) {
         const description = document.getElementById(descriptionId);
